@@ -1,1 +1,1 @@
-# static-final-keywords-java
+# enums-java
