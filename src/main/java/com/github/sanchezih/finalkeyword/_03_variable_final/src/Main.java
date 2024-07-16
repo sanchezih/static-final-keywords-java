@@ -9,16 +9,10 @@ package com.github.sanchezih.finalkeyword._03_variable_final.src;
 public class Main {
 
 	public static void main(String[] args) {
+		// Define a constant variable PI
+		final double PI = 3.14159;
 
-		final StringBuilder cadena = new StringBuilder("Java"); // Una variable final de referencia
-
-		System.out.println(cadena);
-
-		/*
-		 * Cambio estado interno de referencia del objeto por variable de referencia
-		 * final 'cadena'
-		 */
-		cadena.append("desdeCero");
-		System.out.println(cadena);
+		// Print the value of PI
+		System.out.println("Value of PI: " + PI);
 	}
 }
