@@ -1,4 +1,4 @@
-package com.github.sanchezih.finalkeyword._02_metodo_final.src;
+package com.github.sanchezih.finalkeyword._02_metodo_final;
 
 /**
  * 
@@ -23,13 +23,12 @@ public class Empleado extends Persona {
 	}
 
 	/**
-	 * No podemos reescribir el metodo 'esMayor' para la clase Empleado indicando
-	 * que 6 anios es mayor de edad
+	 * Este metodo indica que todo empleado es mayor de edad, independientemente de
+	 * su edad (Lo cual no deberia pasar).
 	 */
-
-	/*
-	 * public final boolean esMayor() { if (edad >= 6) return true; else return
-	 * false; }
-	 */
+//	@Override
+//	public boolean esMayorDeEdad() {
+//		return true;
+//	}
 
 }

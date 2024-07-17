@@ -1,4 +1,4 @@
-package com.github.sanchezih.finalkeyword._01_clase_final.src;
+package com.github.sanchezih.finalkeyword._01_clase_final;
 
 /**
  * En Java podemos sellar una clase para evitar que otras clases hereden de la
@@ -9,6 +9,8 @@ package com.github.sanchezih.finalkeyword._01_clase_final.src;
  * En algunas situaciones donde veamos que no tiene sentido aplicar herencia a
  * la clase que estamos creando podemos declararla de tipo final. Si luego
  * alguien quiere heredar de la misma se genera un error de compilacion.
+ * 
+ * Esta clase representa un punto en el plano
  * 
  * @author ihsanch
  *
@@ -33,10 +35,12 @@ public final class Punto {
 	/*----------------------------------------------------------------------------*/
 
 	/**
-	 * 
+	 * Muestra por consola en que cuadrante se encuenta el punto
 	 */
-	void imprimirCuadrante() {
+	void mostrarCuadrante() {
+
 		System.out.print("[" + x + "," + y + "] ");
+
 		if (x > 0 && y > 0)
 			System.out.println("Se encuentra en el primer cuadrante.");
 		else if (x < 0 && y > 0)

@@ -1,7 +1,9 @@
 package com.github.sanchezih.finalkeyword._03_variable_final.src;
 
 /**
- * Programa Java para demostrar la variable final de referencia
+ * Cuando una variable se declara con la palabra clave final, su valor no se
+ * puede modificar, esencialmente, es una constante. Esto tambien significa que
+ * debe inicializar una variable final.
  * 
  * @author ihsanch
  *
@@ -9,10 +11,9 @@ package com.github.sanchezih.finalkeyword._03_variable_final.src;
 public class Main {
 
 	public static void main(String[] args) {
-		// Define a constant variable PI
+
 		final double PI = 3.14159;
 
-		// Print the value of PI
-		System.out.println("Value of PI: " + PI);
+		System.out.println("Valor de PI: " + PI);
 	}
 }

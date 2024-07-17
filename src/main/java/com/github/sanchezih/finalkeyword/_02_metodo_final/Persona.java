@@ -1,4 +1,4 @@
-package com.github.sanchezih.finalkeyword._02_metodo_final.src;
+package com.github.sanchezih.finalkeyword._02_metodo_final;
 
 public class Persona {
 
@@ -47,26 +47,20 @@ public class Persona {
 	/**
 	 * 
 	 */
-	public void imprimirDatosPersonales() {
+	public void mostrarDatosPersonales() {
 		System.out.println("Nombre:" + nombre);
 		System.out.println("Edad:" + edad);
 	}
 
 	/**
+	 * En Java podemos sellar un metodo para que las subclases no puedan
+	 * sobreescribirlo, para ello debemos agregar la palabra clave final previo al
+	 * tipo de dato que devuelve.
 	 * 
 	 * @return
 	 */
-	public final boolean esMayor() {
-		boolean esMayor = false;
-		if (edad >= LIMITE_MENOR_EDAD) {
-			esMayor = true;
-		}
-		return esMayor;
-	}
-
-	@Override
-	public String toString() {
-		return nombre;
+	public final boolean esMayorDeEdad() {
+		return edad >= LIMITE_MENOR_EDAD ? true : false;
 	}
 
 }

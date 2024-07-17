@@ -1,4 +1,4 @@
-package com.github.sanchezih.finalkeyword._01_clase_final.src;
+package com.github.sanchezih.finalkeyword._01_clase_final;
 
 /**
  * 
