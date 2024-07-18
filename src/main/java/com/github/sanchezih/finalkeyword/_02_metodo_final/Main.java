@@ -20,7 +20,7 @@ public class Main {
 
 		System.out.println();
 
-		Empleado empleado1 = new Empleado("Carlos", 4, 10000);
+		Empleado empleado1 = new Empleado("Carlos", 5, 10000);
 		empleado1.mostrarDatosPersonales();
 		empleado1.imprimirSueldo();
 

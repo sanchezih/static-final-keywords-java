@@ -23,12 +23,12 @@ public class Empleado extends Persona {
 	}
 
 	/**
-	 * Este metodo indica que todo empleado es mayor de edad, independientemente de
-	 * su edad (Lo cual no deberia pasar).
+	 * Este metodo indica que todo empleado con edad >= 5 es mayor de edad. Esto no
+	 * deberia pasar, por eso el metodo en la super clase esta declarado como final.
 	 */
 //	@Override
 //	public boolean esMayorDeEdad() {
-//		return true;
+//		return getEdad() >= 5 ? true : false;
 //	}
 
 }

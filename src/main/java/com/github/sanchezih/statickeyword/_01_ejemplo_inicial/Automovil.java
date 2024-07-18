@@ -1,4 +1,4 @@
-package com.github.sanchezih.statickeyword._01_ejemplo_inicial.src;
+package com.github.sanchezih.statickeyword._01_ejemplo_inicial;
 
 public class Automovil {
 
@@ -6,7 +6,7 @@ public class Automovil {
 	private String patente;
 	private String color;
 	private double precio;
-	private static double descuento;
+	private static double descuento; // Variable de clase
 
 	/*----------------------------------------------------------------------------*/
 	/**
@@ -28,7 +28,7 @@ public class Automovil {
 		this.patente = patente;
 		this.color = color;
 		this.precio = precio;
-		Automovil.descuento = 10; // De esta manera se referencia a una variable de clase
+		Automovil.descuento = 10; // De esta manera se referencia a una variable de clase, no con this
 	}
 
 	/*----------------------------------------------------------------------------*/
@@ -44,7 +44,10 @@ public class Automovil {
 	}
 
 	/**
+	 * Metodo estatico que le pertenece a la clase. En un metodo estatico no se
+	 * puede acceder ni variables de instancia (this.xxx) ni a metodos de instancia.
 	 * 
+	 * Se accede a traves de la clase: Automovil.anularDescuento();
 	 */
 	public static void anularDescuento() {
 		Automovil.descuento = 0;
