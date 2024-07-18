@@ -1,5 +1,7 @@
-
 # Keywords final y static en Java
+
+![GitHub last commit](https://img.shields.io/github/last-commit/sanchezih/final-static-keywords-java)
+![GitHub repo size](https://img.shields.io/github/repo-size/sanchezih/final-static-keywords-java)
 
 La palabra clave **final** indica que una variable no se puede reasignar una vez que se ha inicializado. Esto es util para evitar cambios accidentales en variables importantes.
 
