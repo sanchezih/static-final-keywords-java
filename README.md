@@ -7,4 +7,4 @@
 
 - La palabra clave **final** indica que una variable no se puede reasignar una vez que se ha inicializado. Esto es util para evitar cambios accidentales en variables importantes.
 
-- [Difference Between "final static" and "static final"](https://www.baeldung.com/java-static-final-order)
+- [Diferencia entre "final static" y "static final"](https://www.baeldung.com/java-static-final-order).
