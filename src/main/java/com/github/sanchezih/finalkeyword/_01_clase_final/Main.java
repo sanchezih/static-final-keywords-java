@@ -1,10 +1,5 @@
 package com.github.sanchezih.finalkeyword._01_clase_final;
 
-/**
- *
- * @author ihsanch
- *
- */
 public class Main {
 
     public static void main(String[] args) {
@@ -14,7 +9,6 @@ public class Main {
 
         Punto punto2 = new Punto(-4, 5);
         punto2.mostrarCuadrante();
-
     }
 
 }
