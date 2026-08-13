@@ -1,10 +1,5 @@
 package com.github.sanchezih.finalkeyword._02_metodo_final;
 
-/**
- * 
- * @author ihsanch
- *
- */
 public class Empleado extends Persona {
 
 	protected int sueldo;

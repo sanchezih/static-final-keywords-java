@@ -5,7 +5,8 @@ public class Ticket {
 	// Al declarar la variable como static, el valor de contador sera compartido por
 	// todas las instancias de la clase. Si no fuese static, en cada llamada al
 	// constructor este valor seria 0, por lo tanto, cada ticket tendria numero 1.
-	private int contador = 0;
+	
+	private /* static */ int contador = 0;
 
 	private int numero;
 	private String fechaDeCompra;
