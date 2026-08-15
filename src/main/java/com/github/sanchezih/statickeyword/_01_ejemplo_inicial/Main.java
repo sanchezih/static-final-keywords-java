@@ -23,4 +23,5 @@ public class Main {
 		System.out.println("Precio promocional: " + a2.getPrecioPromocional());
 
 	}
+
 }

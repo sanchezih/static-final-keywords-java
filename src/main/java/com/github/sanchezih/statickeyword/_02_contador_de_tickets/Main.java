@@ -14,4 +14,5 @@ public class Main {
 		System.out.println(ticket3);
 		System.out.println(ticket4);
 	}
+
 }

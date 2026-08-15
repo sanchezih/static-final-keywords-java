@@ -2,10 +2,12 @@ package com.github.sanchezih.statickeyword._02_contador_de_tickets;
 
 public class Ticket {
 
-	// Al declarar la variable como static, el valor de contador sera compartido por
-	// todas las instancias de la clase. Si no fuese static, en cada llamada al
-	// constructor este valor seria 0, por lo tanto, cada ticket tendria numero 1.
-	
+	// Al declarar la variable como static, el valor de contador es compartido por
+	// todas las instancias de la clase.
+	//
+	// Si contador no fuese static, cada objeto Ticket tendria su propia copia de
+	// la variable, inicializada en 0. Por lo tanto, cada ticket tendria numero 1.
+
 	private /* static */ int contador = 0;
 
 	private int numero;

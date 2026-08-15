@@ -6,36 +6,30 @@ public class Automovil {
 	private String patente;
 	private String color;
 	private double precio;
-	private static double descuento; // Variable de clase
+	private static double descuento = 10; // Variable de clase
 
 	/*----------------------------------------------------------------------------*/
-	/**
-	 * 
-	 */
+
 	public Automovil() {
 
 	}
 
-	/**
-	 * 
-	 * @param marca
-	 * @param patente
-	 * @param color
-	 * @param precio
-	 */
 	public Automovil(String marca, String patente, String color, double precio) {
 		this.marca = marca;
 		this.patente = patente;
 		this.color = color;
 		this.precio = precio;
-		Automovil.descuento = 10; // De esta manera se referencia a una variable de clase, no con this
 	}
 
 	/*----------------------------------------------------------------------------*/
 
 	/**
-	 * Desde un metodo de instancia, puedo trabajar con una variable de clase. Lo
-	 * contrario no puede hacerse.
+	 * Desde un metodo de instancia se puede acceder tanto a variables de instancia
+	 * como a variables de clase (static).
+	 * 
+	 * En cambio, desde un metodo static no se puede acceder directamente a
+	 * variables ni a metodos de instancia, ya que estos pertenecen a un objeto
+	 * especifico.
 	 * 
 	 * @return
 	 */
@@ -44,10 +38,14 @@ public class Automovil {
 	}
 
 	/**
-	 * Metodo estatico que le pertenece a la clase. En un metodo estatico no se
-	 * puede acceder ni variables de instancia (this.xxx) ni a metodos de instancia.
+	 * Metodo estatico que pertenece a la clase y no a una instancia particular.
 	 * 
-	 * Se accede a traves de la clase: Automovil.anularDescuento();
+	 * Desde un metodo static no se puede acceder directamente a variables ni a
+	 * metodos de instancia, ya que estos pertenecen a un objeto especifico.
+	 * 
+	 * Los metodos static se pueden invocar utilizando el nombre de la clase:
+	 * 
+	 * Automovil.anularDescuento();
 	 */
 	public static void anularDescuento() {
 		Automovil.descuento = 0;
