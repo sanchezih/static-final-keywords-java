@@ -4,7 +4,7 @@ package com.github.sanchezih.finalkeyword._03_variable_final;
  * Cuando una variable se declara con la palabra clave 'final', su valor solo
  * puede asignarse una vez.
  * 
- * Despues de inicializarla, no puede modificarse.
+ * Una vez asignado un valor, no puede reasignarse.
  */
 public class Main {
 
