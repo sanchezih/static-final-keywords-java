@@ -11,23 +11,12 @@ public class Persona {
 
 	/*----------------------------------------------------------------------------*/
 
-	/**
-	 * 
-	 * @param nombre
-	 * @param edad
-	 */
 	public Persona(String nombre, int edad) {
 		this.nombre = nombre;
 		this.edad = edad;
 
 	}
 
-	/**
-	 * 
-	 * @param nombre
-	 * @param apellido
-	 * @param dni
-	 */
 	public Persona(String nombre, String apellido, String dni) {
 		this.nombre = nombre;
 		this.apellido = apellido;
@@ -35,10 +24,6 @@ public class Persona {
 	}
 
 	/*----------------------------------------------------------------------------*/
-
-	public String getNombre() {
-		return nombre;
-	}
 
 	public int getEdad() {
 		return edad;
@@ -53,15 +38,15 @@ public class Persona {
 	}
 
 	/**
-	 * En Java podemos sellar un metodo para que las subclases no puedan
-	 * sobreescribirlo, para ello debemos agregar la palabra clave final previo al
-	 * tipo de dato que devuelve.
+	 * En Java podemos impedir que un metodo sea sobrescrito por las subclases
+	 * mediante la palabra clave 'final', colocandola antes del tipo de dato que
+	 * devuelve el metodo.
 	 * 
-	 * @return
+	 * Un metodo declarado como 'final' puede ser heredado por las subclases, pero
+	 * estas no pueden sobrescribirlo.
 	 */
 	public final boolean esMayorDeEdad() {
-		return edad >= LIMITE_MENOR_EDAD ? true : false;
+		return edad >= LIMITE_MENOR_EDAD;
 	}
 
 }
-

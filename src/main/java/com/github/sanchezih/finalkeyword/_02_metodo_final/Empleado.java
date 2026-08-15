@@ -18,12 +18,16 @@ public class Empleado extends Persona {
 	}
 
 	/**
-	 * Este metodo indica que todo empleado con edad >= 5 es mayor de edad. Esto no
-	 * deberia pasar, por eso el metodo en la super clase esta declarado como final.
+	 * Si esMayorDeEdad() no fuera final, una subclase podria sobrescribirlo y
+	 * modificar su comportamiento.
+	 * 
+	 * En este caso, por ejemplo, estamos intentando indicar que un empleado con
+	 * edad >= 5 es mayor de edad. Esto demuestra por que queremos impedir que las
+	 * subclases sobrescriban este metodo.
 	 */
 //	@Override
 //	public boolean esMayorDeEdad() {
-//		return getEdad() >= 5 ? true : false;
+//		return getEdad() >= 5;
 //	}
 
 }
