@@ -1,16 +1,19 @@
 package com.github.sanchezih.finalkeyword._01_clase_final;
 
 /**
- * En Java podemos sellar una clase para evitar que otras clases hereden de la
- * misma mediante la palabra clave 'final' previo a la declaracion de la clase:
+ * En Java podemos impedir que una clase sea heredada por otras clases mediante
+ * la palabra clave 'final', colocandola antes de la declaracion de la clase:
  * 
  * public final class [Nombre de la clase] { }
  * 
- * En algunas situaciones donde veamos que no tiene sentido aplicar herencia a
- * la clase que estamos creando podemos declararla de tipo final. Si luego
- * alguien quiere heredar de la misma se genera un error de compilacion.
+ * En algunas situaciones, cuando consideramos que no tiene sentido permitir que
+ * otras clases hereden de la clase que estamos creando, podemos declararla como
+ * 'final'.
  * 
- * Esta clase representa un punto en el plano
+ * Si luego otra clase intenta heredar de una clase declarada como 'final', se
+ * genera un error de compilacion.
+ * 
+ * Esta clase representa un punto en el plano.
  * 
  * @author ihsanch
  *
@@ -37,7 +40,7 @@ public final class Punto {
 	/**
 	 * Muestra por consola en que cuadrante se encuenta el punto
 	 */
-	void mostrarCuadrante() {
+	public void mostrarCuadrante() {
 
 		System.out.print("[" + x + "," + y + "] ");
 
